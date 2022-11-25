@@ -1,0 +1,98 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 10px;
+    background-color: rgb(46, 43, 43);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0);
+
+}
+
+.logo {
+    width: 25%;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(133, 60, 228);
+    transition: 0.4s ease;
+}
+
+.fa-cart-shopping {
+    font-size: 30px;
+    color: white;
+
+}
+
+#navbar li a:hover {
+    color: rgb(255, 152, 229);
+
+}
+
+/*home*/
+
+#img-principal {
+    background-image: url("https://helios-i.mashable.com/imagery/articles/01C24vF7RFsL84ROCxy45oU/hero-image.jpg");
+    height: 100vh;
+    width: 88.3%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#img-principal h1 {
+    color: rgb(82, 10, 92);
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+#img-principal button {
+    background-color: rgb(133, 92, 118);
+    color: rgb(168, 161, 168);
+    border: 0;
+    border-radius: 60px;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 14px;
+    margin-bottom: 400px;
+}
+
+#img-principal button:hover {
+    color: white;
+    transition: 0.4s ease;
+}
+
+.btn {
+    text-decoration: none;
+    color: rgb(247, 246, 244);
+
+}

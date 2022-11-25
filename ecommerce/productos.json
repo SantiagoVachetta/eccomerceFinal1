@@ -1,0 +1,11 @@
+[{"categoria":"preservativos","precio":10,"stock":63,"descrip":"Preservativos de látex con tachas.","img":"../images/prime-preser-tachas-x-3unid.jpg","id":"1"},
+{"categoria":"preservativos","precio":98,"stock":13,"descrip":"Preservativos de látex anatomicos. ","img":"../images/prime.jpg","id":"2"},
+{"categoria":"preservativos","precio":32,"stock":7,"descrip":"Preservativos de látex texturados.","img":"../images/prime2.jpg","id":"3"},
+{"categoria":"juguetes","precio":12,"stock":67,"descrip":"Satisfyer Pro 2, diseño anatomico. ","img":"../images/jug3.jpg","id":"4"},
+{"categoria":"juguetes","precio":10,"stock":31,"descrip":"Vibrador recargable sin sonido.","img":"../images/jug1.jpg","id":"5"},
+{"categoria":"juguetes","precio":59,"stock":53,"descrip":"Satisfyer compacto recargable.","img":"../images/jug2.jpg","id":"6"},
+{"categoria":"Gel","precio":51,"stock":6,"descrip":"Gel lubricante con efecto calor.","img":"../images/gel1.jpg","id":"7"},
+{"categoria":"Gel","precio":3,"stock":78,"descrip":" Miss V estimulacion femenina.","img":"../images/gel2.jpg","id":"8"},
+{"categoria":"Gel","precio":8,"stock":63,"descrip":"Lubricante neutro dermatologico.","img":"../images/gel3.jpg","id":"9"}]
+
+

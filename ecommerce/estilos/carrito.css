@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Texturina:ital,opsz,wght@0,12..72,300;0,12..72,400;0,12..72,500;0,12..72,600;0,12..72,700;1,12..72,500&display=swap');
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(238, 241,238 );
+    font-family: 'Texturina';
+   
+}
+
+
+/*header*/
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 10px;
+    background-color: rgb(46, 43, 43);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0);
+    
+}
+.logo{
+    width: 25%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    
+}
+
+.navbar li{
+    list-style: none;
+    padding: 0 20px;
+    
+}
+.navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(133, 60, 228);
+    transition: 0.4s ease;
+}
+.fa-cart-shopping{
+    font-size: 30px;
+    color: white;
+   
+}
+.navbar li a:hover{
+    color: rgb(255, 152, 229);
+}
+
+#sectionProductos{
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    
+}
+.root{
+    display: flex;
+    padding: 15px;
+    width: 100%;
+    flex-direction: column;
+        
+      
+    
+}
+#carrito{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-decoration: none; 
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.card>img{
+    display: flex;
+    width: 18rem;
+    height: 300px;}
+
+.finalizar-compra{
+    
+    padding: 10px;
+    border-radius: 5px;
+     margin-left: 45
+     
+     %;
+    
+    
+}
