@@ -104,7 +104,7 @@ const eventoAgregarProducto = () => {
 
 
 window.onload = function () {
-    arrayCarrito = JSON.parse(localStorage.getItem("carrito"))
+    arrayCarrito = JSON.parse(localStorage.getItem("carrito")) || []
 }
 document.addEventListener("DOMContentLoaded", async () => {
 

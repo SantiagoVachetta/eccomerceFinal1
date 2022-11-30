@@ -99,14 +99,12 @@ const btnEliminar = () => {
 
 btnEliminar()
 
-const totalCarrito = () => {
-    document.querySelector("")
-}
 
 
 
 
-document.addEventListener("DOMContentLoaded", () => { })
+
+
 
 
 
