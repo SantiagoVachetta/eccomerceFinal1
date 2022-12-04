@@ -24,7 +24,7 @@ const getRequest = async () => {
 
 
 
-const generarCards = (array) => {
+  const generarCards = (array) => {
     console.log(arrayProductos)
     arrayProductos.forEach((element) => {
         let { nombre, precio, id, img, stock, descrip } = element;
@@ -60,7 +60,7 @@ const eventoAgregarProducto = () => {
             let existe = arrayCarrito.findIndex(el => el.id == id)
             if (existe != -1) {
                 let producto = arrayCarrito[existe]
-                producto.sumarCantidad()
+                
             } else {
                 let resultado = arrayProductos.find(el => el.id == id)
                 let producto = new Producto(resultado.nombre, resultado.precio, resultado.img, resultado.id);
