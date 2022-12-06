@@ -102,6 +102,10 @@ const eventoAgregarProducto = () => {
 
 }
 
+ 
+
+
+
 
 window.onload = function () {
     arrayCarrito = JSON.parse(localStorage.getItem("carrito")) || []
@@ -110,7 +114,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     await getRequest(),
         generarCards()
-
+        
 
 })
 

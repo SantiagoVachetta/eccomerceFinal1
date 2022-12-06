@@ -1,31 +1,44 @@
 
 import { Producto } from "../app/classprod.js";
 const d = document;
-let carritoLleno = []
+
+
 
 const carrito = d.getElementById("carrito")
-console.log(carrito)
-const arrayCarrito = JSON.parse(localStorage.getItem("carrito"))
 
-const generarHtml = (array) => {
-    carrito.innerHTML = ""
-    array.map(el => {
+const arrayCarrito = JSON.parse(localStorage.getItem("carrito")) || []
+
+const productosCart = () => {
+    arrayCarrito.forEach(producto => {
+        const { categoria, precio, id, img, descrip, cantidad } = producto
         carrito.innerHTML += `
-                                    
-                                    <div class= "item-carrito" id=${el.id}>
-                                        <img src=${el.img} alt="">
-                                        <h3>${el.nombre}</h3>
-                                        <span>${el.cantidad}</span>
-                                        <span>${el.precio}</span>
-                                        <button class="sumarCantidad">+</button>
-                                        <button class="restarCantidad">-</button>
-                                        <button class="eliminar">X</button>
-                                    </div>
-        `
-        sumarCantidad()
-        
-        btnEliminar()
-    })
+       <div class="card" >
+       <img src=${img} alt="">
+       
+       <span>${precio}</span>
+       
+       <button class="btn-eliminar" data-id=${id}>Eliminar</button>
+       
+       </div>
+       
+       `
+
+    });
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -70,7 +83,7 @@ const total = () => {
     $total.innerHTML = `<h1>$${newTotal}</h1>`
 
 }
-
+total()
 const eliminar = (indice, elemento) => {
     arrayCarrito.splice(indice, 1)
     elemento.remove()
@@ -101,23 +114,27 @@ const btnEliminar = () => {
 
 
 
+
 document.addEventListener("DOMContentLoaded", () => {
-    if (localStorage.length > 0) {
+    if (arrayCarrito.length > 0) {
         for (const item of JSON.parse(localStorage.getItem("carrito"))) {
-            let producto = new Producto(item.categoria, item.precio, item.img, item.id,  item.descrip, item.cantidad)
-            arrayCarrito.push()
+
         }
 
+
+
         total()
-        productsCart(arrayCarrito)
+
+        productosCart(arrayCarrito)
         finalizarCompra()
         btnEliminar()
+
     } else {
         document.querySelector("#carrito").innerHTML = `
-        <div>
-            <h2>No hay productos en tu carrito de compras</h2>
-            <a href="../index.html">Volver a la página principal</a>
-        </div>
+         <div>
+             <h2>No agregaste ningun producto!</h2>
+             <a href="../index.html">Volver al inicio</a>
+         </div>
         `
     }
 })
@@ -140,5 +157,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
-}
